@@ -1,0 +1,57 @@
+.dashboard {
+  font-family: "Abhaya";
+  padding-top: 100px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 50px;
+}
+.total {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+  .total-card {
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+    background-color: #1e293b;
+    padding: 20px 15px;
+    border-radius: 5px;
+    .card-icon {
+      padding: 30px 35px;
+      border-radius: 5px;
+      background-color: #a2c4fc;
+    }
+    &:nth-child(2) .card-icon {
+      background-color: #f4a261;
+    }
+    &:nth-child(3) .card-icon {
+      background-color: #a8e6cf;
+    }
+
+    .card-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      h4 {
+        color: #98a6ad;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* !Responsive */
+
+@media screen and (max-width: 576px) {
+  .total-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr min(1960px, 75%) 1fr;
+  }
+  
+  .content > * {
+    grid-column: 2;
+  }
+  
+  .content > .fluid {
+    grid-column: 1 / -1;
+  }
+
+

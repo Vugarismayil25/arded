@@ -1,0 +1,164 @@
+.services-section {
+  position: relative;
+  width: 100%;
+  margin: 100px 0;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Daşmanı önləyir */
+}
+
+.ant-collapse {
+  border: none !important;
+  background: transparent !important;
+}
+
+.ant-collapse-item {
+  border-bottom: none !important;
+}
+
+.ant-collapse-content {
+  border-top: none !important;
+  max-height: 300px; /* Açıldıqda çox böyüməsin */
+  overflow-y: auto; /* Səhifə daşmasın */
+}
+
+.ant-collapse-header {
+  border-bottom: none !important;
+  display: flex;
+  align-items: center;
+}
+
+.ant-collapse-expand-icon {
+  display: none !important; /* Ant Design default iconları gizlədir */
+}
+
+.services-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.services-navigation{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.service-title {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 0px 0px 3px  #fff;
+}
+
+.service-description {
+
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: white;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.service-number {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-right: 15px;
+}
+
+.ant-collapse-item:not(.ant-collapse-item-active) .service-title {
+  font-size: 28px;
+  font-weight: 300;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, font-weight 0.3s ease;
+}
+
+.ant-collapse-item-active .service-title {
+  font-weight: 400;
+  opacity: 1;
+}
+
+.ant-collapse-item-active .service-number {
+  opacity: 1;
+}
+
+.slider {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+}
+
+.carousel-slide img {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide img:hover {
+  opacity: 1;
+}
+
+/* !RESPONSİVE DİZAYN */
+@media (max-width: 1024px) {
+  .services-content {
+    width: 90%;
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-content {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .service-title {
+    font-size: 24px;
+  }
+
+  .service-description {
+    font-size: 10px;
+  }
+
+  .slider {
+    min-height: 50vh;
+  }
+}

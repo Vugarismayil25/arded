@@ -1,0 +1,54 @@
+.admin-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0 30px 0;
+  h2{
+      margin-bottom: 30px;
+  }
+    form {
+  
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      input,select {
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #1e293b;
+     
+        &:focus {
+          color: white;
+        }
+        &::placeholder {
+          color: rgb(177, 175, 175);
+          font-style: italic;
+          font-size: 15px;
+        }
+      }
+      button {
+        border: none;
+        background-color: #1e293b;
+        width: 30%;
+        padding: 15px 0;
+        align-self: flex-end;
+        border-radius: 30px;
+        font-size: 17px;
+        transition: all .3s ease;
+        &:hover{
+          
+          background-color: white;
+          color: #1e293b;
+          
+        }
+      }
+    }
+    .table-content{
+      .MuiTableCell-root {
+          color: white !important;
+        }
+      padding: 20px 0;
+      color: white;
+    }
+  }
+  

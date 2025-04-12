@@ -1,0 +1,53 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111827;
+  font-family: "Abhaya";
+  .login-wrapper {
+    min-width: clamp(250px, 50vw + 100px, 400px);
+    background-color: #1f2937;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    h2 {
+      font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #374151;
+        color: #9ca3af;
+        &:focus {
+          outline: none;
+          background-color: #4b5563;
+          color: white;
+        }
+      }
+      button {
+        border: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #2563eb;
+        padding: 10px 0;
+        font-size: 18px;
+      }
+    }
+  }
+}

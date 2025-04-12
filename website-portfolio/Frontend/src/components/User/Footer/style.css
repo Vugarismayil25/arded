@@ -1,0 +1,63 @@
+.footer-wrapper {
+  position: relative;
+  font-family: "Abhaya";
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  height: 120px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.links {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 70px;
+  a {
+    text-decoration: none;
+    font-family: "Abhaya";
+    text-transform: uppercase;
+    color: white;
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+  }
+}
+.foot-desc {
+  color: white;
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+  line-height: 2;
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+}
+
+/* !Responsive */
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 60px;
+    .links {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+}

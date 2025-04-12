@@ -1,0 +1,71 @@
+.contact-section {
+  font-family: "Abhaya";
+  margin: 100px 0;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  color: white;
+
+  h3 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 100%;
+  }
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li {
+      font-size: clamp(1rem, 3vw, 1.6rem);
+    }
+  }
+}
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+
+    gap: 20px;
+    li {
+      font-size: clamp(1rem, 3vw, 1.6rem);
+      transition: all 0.3s ease;
+      a {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+/* ! Responsive */
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+
+  .contact-right {
+    align-items: flex-start;
+    h3{
+      text-align: start;
+    }
+  }
+}

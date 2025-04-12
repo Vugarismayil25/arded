@@ -28,7 +28,7 @@ export const ImageController = {
             let imageData = {
                 section,
                 slide,
-                image: import.meta.env.VITE_API_URL + req.file.filename,
+                image: process.env.VITE_API_URL + req.file.filename,
             };
 
             if (section === "service") {

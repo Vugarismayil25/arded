@@ -9,7 +9,7 @@ import { useGetBySectionAllImagesQuery } from '../../../../Redux/services/ImageC
 const initialServicesData = [
   {
     key: '1',
-    title: 'Exterior',
+    title: 'Экстерьер',
     description: (
       <div className="service-description">
         The CYLIND studio specializes in creating powerful and memorable first impressions for future buildings. Exterior design plays a crucial role in overall aesthetic appeal, incorporating elements such as architectural features, facades, and color schemes.
@@ -18,7 +18,7 @@ const initialServicesData = [
   },
   {
     key: '2',
-    title: 'Interior',
+    title: 'Интерьер',
     description: (
       <div className="service-description">
         In architectural design, interior spaces are as essential as exteriors. Interior design involves meticulous planning of room layouts, furniture placement, and lighting. With our 3D architectural visualization services, architects and designers can create realistic representations that enhance both comfort and functionality through immersive, photorealistic designs.
@@ -27,7 +27,7 @@ const initialServicesData = [
   },
   {
     key: '3',
-    title: 'Animation',
+    title: 'Анимация',
     description: (
       <div className="service-description">
         Animation in architectural visualization offers dynamic visual representations that vividly illustrate a building's functionality and aesthetics. By partnering with our 3D visualization company, clients can see their projects come to life through captivating animations that showcase their design intentions.
@@ -36,7 +36,7 @@ const initialServicesData = [
   },
   {
     key: '4',
-    title: 'Virtual tour',
+    title: 'Виртуальный тур',
     description: (
       <div className="service-description">
         Our 3D architectural visualization studio offers immersive virtual tours, enabling clients to explore both interior and exterior environments from a 360-degree perspective. This innovative approach provides a realistic understanding of layouts and design concepts, making it an indispensable tool for real estate marketing and client engagement.
@@ -45,7 +45,7 @@ const initialServicesData = [
   },
   {
     key: '5',
-    title: 'Floorplans',
+    title: 'Планы этажей',
     description: (
       <div className="service-description">
         Floorplans in architecture serve as the foundational layout designs of buildings. They allow designers and clients to understand spatial relationships and functional flow within structures. Our floorplan visualizations provide a clear and accurate representation of how a space will be organized and utilized.
@@ -54,7 +54,7 @@ const initialServicesData = [
   },
   {
     key: '6',
-    title: 'Modeling',
+    title: 'Моделирование',
     description: (
       <div className="service-description">
         Modeling in architecture involves creating three-dimensional digital representations of buildings, allowing architects and designers to visualize and manipulate the structure. These models provide a tangible look into how the building will appear and function before it's constructed.
